@@ -25,6 +25,9 @@ In order to do that, enter the following commands in your terminal
 
 >sudo usermod -aG docker $USER
 
+Reboot your computer.
+
+
 And try it with
 >docker run hello-world
 
