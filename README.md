@@ -40,7 +40,9 @@ Run
 >docker run --runtime=nvidia --rm -it -p 8888:8888 tensorflow/tensorflow:latest-gpu-py3
 
 You will have some lines saying that you launched a Jupyter server and giving a token like this:
+
 http://127.0.0.1:8888/?token=1cf746371223c18dff95a99b4dfb7db57e14a1528e5c78e
+
 For me, the token is: 1cf746371223c18dff95a99b4dfb7db57e14a1528e5c78e
 
 Enter the following address in a web browser
