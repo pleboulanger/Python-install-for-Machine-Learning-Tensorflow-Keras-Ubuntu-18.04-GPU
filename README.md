@@ -29,27 +29,9 @@ And try it with
 >docker run hello-world
 
 If it downloads something without an error massage, it's running okay.
-
-Now, you need to install nvidia-docker in order to use your GPU.
-Write the following command in your terminal
-
->curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
->  sudo apt-key add -
->distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
->curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
->  sudo tee /etc/apt/sources.list.d/nvidia-docker.list
->sudo apt-get update
-
-Then,
-
->sudo apt-get install -y nvidia-docker2
->sudo pkill -SIGHUP dockerd
-
-And finally try your install with this command
-
->docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
-
-It should print some information about your graphic card. If it does, nvidia-docker is installed!
+Now, you need to install nvidia-docker in order to use your GPU. Go to the following link and follow the install for Ubuntu 18.04
+https://github.com/NVIDIA/nvidia-docker
+Nvidia-docker is now installed!
 
 Open a terminal
 Run
@@ -95,6 +77,9 @@ The result should be something like that showing the training:
 
 ###### Sources :
 https://hub.docker.com/r/tensorflow/tensorflow/
+
 https://docs.docker.com/install/linux/linux-postinstall/
+
 https://github.com/NVIDIA/nvidia-docker
+
 https://www.tensorflow.org/install/docker
