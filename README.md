@@ -30,7 +30,9 @@ And try it with
 
 If it downloads something without an error massage, it's running okay.
 Now, you need to install nvidia-docker in order to use your GPU. Go to the following link and follow the install for Ubuntu 18.04
+
 https://github.com/NVIDIA/nvidia-docker
+
 Nvidia-docker is now installed!
 
 Open a terminal
